@@ -13,26 +13,38 @@ const Navbar = () => {
             <img src={assets.logo} alt="" className="object-scale-down" />
           </div>
           <div className="flex items-center">
-            <span>PrimeMechatronics</span>
+            <span className="text-xl">PrimeMechatronics</span>
           </div>
         </div>
 
         <ul className="hidden md:flex gap-7">
-          <a href="#Header" className="cursor-pointer hover:text-gray-400">
+          <a
+            href="#Header"
+            className="cursor-pointer hover:text-gray-400 text-xl"
+          >
             Home
           </a>
-          <a href="#Header" className="cursor-pointer hover:text-gray-400">
+          <a
+            href="#Header"
+            className="cursor-pointer hover:text-gray-400 text-xl"
+          >
             About
           </a>
-          <a href="#Header" className="cursor-pointer hover:text-gray-400">
+          <a
+            href="#Header"
+            className="cursor-pointer hover:text-gray-400 text-xl"
+          >
             Projects
           </a>
-          <a href="#Header" className="cursor-pointer hover:text-gray-400">
+          <a
+            href="#Header"
+            className="cursor-pointer hover:text-gray-400 text-xl"
+          >
             More
           </a>
         </ul>
-        <button className="hidden md:block bg-white px-8 py-2 rounded-full">
-          Sign-up
+        <button className="hidden cursor-pointer md:block bg-white px-8 py-2 rounded-full text-xl hover:text-gray-400">
+          Contact Us
         </button>
       </div>
     </div>
