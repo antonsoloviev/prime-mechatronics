@@ -2,7 +2,7 @@ import React from "react";
 
 const Greeting = () => {
   return (
-    <div
+    <section
       className="container min-h-fit text-left mx-auto py-4 px-6 md:px-20 lg:px-32 text-white"
       style={{ backgroundImage: "url('/header_img.jpg')" }}
     >
@@ -13,16 +13,15 @@ const Greeting = () => {
           </h2>
           <p className="text-2xl">Индивидуальный подход</p>
         </div>
-        <div>
-          <a
-            href="#About"
-            className="border border-white px-8 py-3 rounded-2xl"
-          >
-            Узнать больше
-          </a>
-        </div>
+
+        <a
+          href="#About"
+          className="border border-white px-8 py-3 rounded-2xl max-w-fit"
+        >
+          Узнать больше
+        </a>
       </div>
-    </div>
+    </section>
   );
 };
 

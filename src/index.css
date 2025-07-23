@@ -3,5 +3,6 @@
 @import "tailwindcss";
 
 *{
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
 }
