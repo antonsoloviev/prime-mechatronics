@@ -7,6 +7,7 @@ import project_3 from "./project_3.avif";
 import project_4 from "./project_4.avif";
 import project_5 from "./project_5.avif";
 import project_6 from "./project_6.avif";
+import greeting_1 from "./greeting_1.jpg";
 import about_img from "./about_img.jpg";
 import menu from "./icon-menu.svg";
 import menuClose from "./icon-close-menu.svg";
@@ -15,11 +16,13 @@ import right_arrow from "./icon_ChevronRight.svg";
 import icon_whatsapp from "./icon_whatsapp.svg";
 import icon_telegram from "./icon_telegram.svg";
 import icon_instagram from "./icon_instagram.svg";
+import icon_check from "./icon_check2.svg";
 
 export const assets = {
   logo,
   menu,
   menuClose,
+  greeting_1,
   about_img,
   project_img_1,
   project_img_2,
@@ -28,6 +31,7 @@ export const assets = {
   icon_instagram,
   icon_telegram,
   icon_whatsapp,
+  icon_check,
 };
 
 export const projectsData = [
@@ -35,30 +39,42 @@ export const projectsData = [
     title: "Проект 1",
     location: "Минск",
     image: project_1,
+    detail:
+      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
     title: "Проект 2",
     location: "Гродно",
     image: project_2,
+    detail:
+      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
     title: "Проект 3",
     location: "Брест",
     image: project_3,
+    detail:
+      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
     title: "Проект 4",
     location: "Витебск",
     image: project_4,
+    detail:
+      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
     title: "Проект 5",
     location: "Могилев",
     image: project_5,
+    detail:
+      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
     title: "Проект 6",
     location: "Гомель",
     image: project_6,
+    detail:
+      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
 ];

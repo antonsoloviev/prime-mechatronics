@@ -34,7 +34,7 @@ const About = () => {
             профессионализма и качества
           </p>
           <a
-            href="#About"
+            href="#Services"
             className="border border-black px-8 py-3 rounded-2xl max-w-fit"
           >
             Наши услуги

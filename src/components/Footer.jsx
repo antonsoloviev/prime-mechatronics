@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer
       id="Footer"
-      className="pt-10 px-4 md:px-20 lg:px-32 bg-gray-900 w-full overflow-hidden"
+      className="pt-10 px-4 md:px-20 lg:px-32 bg-gray-950 w-full overflow-hidden"
     >
       <div className="container mx-auto flex flex-col gap-4">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-col gap-4 w-full md:w-1/2 mb-8 md:mb-0">
+        <div className="container mx-auto flex flex-col sm:flex-row items-center">
+          <div className="flex flex-col gap-4 w-full md:w-1/2 mb-4 items-center sm:items-start">
             <div className="flex gap-4 ">
               <div
                 className="flex justify-center h-screen"
@@ -56,8 +56,36 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div className="w-full md:w-1/2 ">
+            <ul className="flex flex-col gap-4 items-center sm:items-start">
+              <a
+                href="#Header"
+                className="text-gray-300 cursor-pointer hover:text-white"
+              >
+                Home
+              </a>
+              <a
+                href="#About"
+                className="text-gray-300 cursor-pointer hover:text-white"
+              >
+                About
+              </a>
+              <a
+                href="#Projects"
+                className="text-gray-300 cursor-pointer hover:text-white"
+              >
+                Projects
+              </a>
+              <a
+                href="#Contact us"
+                className="text-gray-300 cursor-pointer hover:text-white"
+              >
+                Contact us
+              </a>
+            </ul>
+          </div>
         </div>
-        <div className="flex justify-between items-center border-t-1 border-gray-500 h-10">
+        <div className="flex flex-col sm:flex-row justify-between items-center border-t-1 border-gray-500 h-12">
           <span className="text-gray-500">© 2025 by PrimeMechatronics</span>
           <span className="text-gray-500">All rights reserved</span>
         </div>

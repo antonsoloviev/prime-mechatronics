@@ -25,44 +25,42 @@ const Navbar = () => {
             <img src={assets.logo} alt="" className="object-scale-down" />
           </div>
           <div className="flex sm:flex md:flex flex-col items-left">
-            <span className="text-base">Prime</span>
-            <span className="text-base">Mechatronics</span>
+            <span className="text-base text-gray-300">Prime</span>
+            <span className="text-base text-gray-300">Mechatronics</span>
           </div>
         </div>
 
-        <ul className="hidden md:flex gap-7">
-          <a
-            href="#Header"
-            className="cursor-pointer hover:text-gray-400 text-xl"
-          >
-            Home
-          </a>
-          <a
-            href="#About"
-            className="cursor-pointer hover:text-gray-400 text-xl"
-          >
-            About
-          </a>
+        <ul className="hidden sm:flex gap-8">
           <a
             href="#Projects"
-            className="cursor-pointer hover:text-gray-400 text-xl"
+            className="cursor-pointer text-gray-300 hover:text-white text-xl py-2"
           >
             Projects
           </a>
           <a
-            href="#More"
-            className="cursor-pointer hover:text-gray-400 text-xl"
+            href="#Services"
+            className="cursor-pointer text-gray-300 hover:text-white text-xl py-2"
           >
-            More
+            Services
+          </a>
+
+          <a
+            href="#About"
+            className="cursor-pointer text-gray-300 hover:text-white text-xl py-2"
+          >
+            About
           </a>
         </ul>
-        <button className="hidden cursor-pointer md:block bg-white px-8 py-2 rounded-full text-xl hover:text-gray-400">
+        <a
+          href="#Contact"
+          className="hidden sm:flex cursor-pointer text-gray-300 hover:text-white text-xl py-2"
+        >
           Contact Us
-        </button>
+        </a>
         <img
           onClick={() => setShowMobileMenu(true)}
           src={assets.menu}
-          className="md:hidden w-7 cursor-pointer"
+          className="sm:hidden w-7 cursor-pointer"
           alt=""
         />
       </div>
@@ -104,10 +102,17 @@ const Navbar = () => {
           </a>
           <a
             onClick={() => setShowMobileMenu(false)}
-            href="#More"
+            href="#Services"
             className="px-4 py-2 rounded-full inline-block"
           >
-            More
+            Services
+          </a>
+          <a
+            onClick={() => setShowMobileMenu(false)}
+            href="#Contact"
+            className="px-4 py-2 rounded-full inline-block"
+          >
+            Contact us
           </a>
         </ul>
       </div>
