@@ -1,22 +1,42 @@
 import { assets, projectsData } from "../assets/assets";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import "./Projects.css";
+import "./ProjectsSlider.css";
 import "swiper/css";
 import { sliderSettings } from "../utils/common";
+import { Link } from "react-router";
 
-const Projects = () => {
+const ProjectsSlider = () => {
   return (
     <section
       id="Projects"
       className="relative container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden"
     >
       <div className="flex flex-col items-start">
-        <h1 className="text-3xl sm:text-6xl font-bold mb-2 text-left">
+        <h1 className="text-3xl sm:text-6xl font-bold mb-4 text-left">
           Проекты
         </h1>
-        <p className="sm:text-xl text-lef mb-2 max-w-80">
+        <p className="sm:text-xl text-left mb-2 max-w-80">
           Изучи наше портфолио
         </p>
+        <Link to="/projects" className="flex gap-4 items-center group">
+          <span className="sm:text-xl group-hover:text-gray-500">
+            Посмотреть все проекты
+          </span>
+          <svg
+            className="ease-in-out transition duration-300 group-hover:translate-x-4 group-hover:stroke-gray-500 stroke-black "
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M6 12.0004H18.0005M18.0005 12.0004L13.5 8M18.0005 12.0004L13.5 16"
+              //   stroke="black"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </Link>
       </div>
 
       <Swiper {...sliderSettings}>
@@ -48,7 +68,7 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsSlider;
 
 const SliderButtons = () => {
   const swiper = useSwiper();

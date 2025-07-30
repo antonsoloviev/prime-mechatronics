@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import { useEffect } from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -17,46 +18,47 @@ const Navbar = () => {
   return (
     <div className="absolute top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center px-6 py-4 md:px-16 lg:px-32 bg-transparent">
-        <div className="flex justify-center gap-4">
-          <div
-            className="flex justify-center h-screen"
-            style={{ height: "48px" }}
-          >
-            <img src={assets.logo} alt="" className="object-scale-down" />
+        <Link to="/">
+          <div className="flex justify-center gap-4">
+            <div
+              className="flex justify-center h-screen"
+              style={{ height: "48px" }}
+            >
+              <img src={assets.logo} alt="" className="object-scale-down" />
+            </div>
+            <div className="flex sm:flex md:flex flex-col items-left">
+              <span className="text-base text-gray-300">Prime</span>
+              <span className="text-base text-gray-300">Mechatronics</span>
+            </div>
           </div>
-          <div className="flex sm:flex md:flex flex-col items-left">
-            <span className="text-base text-gray-300">Prime</span>
-            <span className="text-base text-gray-300">Mechatronics</span>
-          </div>
-        </div>
+        </Link>
 
         <ul className="hidden sm:flex gap-8">
-          <a
-            href="#Projects"
-            className="cursor-pointer text-gray-300 hover:text-white text-xl py-2"
-          >
-            Projects
-          </a>
-          <a
-            href="#Services"
-            className="cursor-pointer text-gray-300 hover:text-white text-xl py-2"
-          >
-            Services
-          </a>
-
-          <a
-            href="#About"
-            className="cursor-pointer text-gray-300 hover:text-white text-xl py-2"
-          >
-            About
-          </a>
+          <Link to={{ pathname: "/", hash: "#Projects" }}>
+            <li className="cursor-pointer text-gray-300 hover:text-white text-xl py-2">
+              Projects
+            </li>
+          </Link>
+          <Link to={{ pathname: "/", hash: "#Services" }}>
+            <li className="cursor-pointer text-gray-300 hover:text-white text-xl py-2">
+              Services
+            </li>
+          </Link>
+          <Link to={{ pathname: "/", hash: "#About" }}>
+            <li
+              href="#About"
+              className="cursor-pointer text-gray-300 hover:text-white text-xl py-2"
+            >
+              About
+            </li>
+          </Link>
         </ul>
-        <a
-          href="#Contact"
+        <Link
+          to={{ pathname: "/", hash: "#Contact" }}
           className="hidden sm:flex cursor-pointer text-gray-300 hover:text-white text-xl py-2"
         >
           Contact Us
-        </a>
+        </Link>
         <img
           onClick={() => setShowMobileMenu(true)}
           src={assets.menu}

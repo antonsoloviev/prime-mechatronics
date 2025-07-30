@@ -2,10 +2,6 @@
 
 @import "tailwindcss";
 
-@theme {
-  --breakpoint-xs: 360rem;
-}
-
 *{
     font-family: Roboto, sans-serif;
 }
