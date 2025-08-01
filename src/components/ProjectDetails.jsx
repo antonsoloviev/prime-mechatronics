@@ -10,7 +10,12 @@ const ProjectDetails = () => {
 
   return (
     <div className="flex flex-col gap-6 container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden">
-      <ScrollRestoration />
+      <ScrollRestoration
+        getKey={(location) => {
+          // Restore based on pathname
+          return location.pathname;
+        }}
+      />
       <div
         className="group flex gap-4 items-center cursor-pointer"
         onClick={() => navigate(-1)}
