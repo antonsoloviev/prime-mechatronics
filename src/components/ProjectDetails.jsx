@@ -1,6 +1,7 @@
 import { projectsData } from "../assets/assets";
 import { useNavigate } from "react-router";
 import { useParams } from "react-router";
+import { ScrollRestoration } from "react-router";
 
 const ProjectDetails = () => {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="flex flex-col gap-6 container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden">
+      <ScrollRestoration />
       <div
         className="group flex gap-4 items-center cursor-pointer"
         onClick={() => navigate(-1)}
