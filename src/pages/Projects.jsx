@@ -1,6 +1,7 @@
+import { Link } from "react-router";
 import { projectsData } from "../assets/assets";
-import { ScrollRestoration } from "react-router";
 import { useNavigate } from "react-router";
+import { ScrollRestoration } from "react-router";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -34,24 +35,23 @@ const Projects = () => {
         </div>
         <div className="flex flex-wrap">
           {projectsData.map((card, i) => (
-            <div
-              key={i}
-              className="project-card flex flex-col gap-2.5 pt-16 border-transparent rounded-xl w-max m-auto transition-all duration-300 ease-in"
-            >
-              <img
-                src={card.image}
-                alt={card.title}
-                className="w-full max-h-50 rounded-xl"
-              />
-              <div className=" flex justify-start">
-                <div className="inline-bloc w-3/4 px-4 py-2">
-                  <h2 className="text-xl font-semibold text-gray-800">
-                    {card.title}
-                  </h2>
-                  <p>{card.location}</p>
+            <Link to={`/projects/${card.id}`} className="m-auto" key={i}>
+              <div className="project-card flex flex-col gap-2.5 pt-16 border-transparent rounded-xl w-max transition-all duration-300 ease-in">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-full max-h-50 rounded-xl"
+                />
+                <div className=" flex justify-start">
+                  <div className="inline-bloc w-3/4 px-4 py-2">
+                    <h2 className="text-xl font-semibold text-gray-800">
+                      {card.title}
+                    </h2>
+                    <p>{card.location}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

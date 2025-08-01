@@ -31,7 +31,6 @@ const ProjectsSlider = () => {
           >
             <path
               d="M6 12.0004H18.0005M18.0005 12.0004L13.5 8M18.0005 12.0004L13.5 16"
-              //   stroke="black"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
@@ -43,24 +42,28 @@ const ProjectsSlider = () => {
         <SliderButtons />
         {projectsData.map((card, i) => (
           <SwiperSlide key={i}>
-            <div
-              key={i}
-              className="project-card flex flex-col gap-2.5 pt-16 border-transparent rounded-xl w-max m-auto transition-all duration-300 ease-in"
-            >
-              <img
-                src={card.image}
-                alt={card.title}
-                className="w-full max-h-50 rounded-xl"
-              />
-              <div className=" flex justify-start">
-                <div className="inline-bloc w-3/4 px-4 py-2">
-                  <h2 className="text-xl font-semibold text-gray-800">
-                    {card.title}
-                  </h2>
-                  <p>{card.location}</p>
+            <Link to={`/projects/${card.id}`}>
+              <div
+                key={i}
+                className="project-card flex flex-col justify-between pt-14 rounded-xl max-w-xs m-auto transition-all duration-300 ease-in h-full min-h-85"
+              >
+                <div>
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="rounded-xl"
+                  />
+                </div>
+                <div className=" flex justify-start">
+                  <div className="inline-bloc w-3/4 px-4 py-2">
+                    <h2 className="text-xl font-semibold text-gray-800">
+                      {card.title}
+                    </h2>
+                    <p>{card.location}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -76,14 +79,14 @@ const SliderButtons = () => {
     <div className="absolute z-1 top-0 right-0 self-end flex justify-end items-center">
       <button
         onClick={() => swiper.slidePrev()}
-        className="cursor-pointer p-3 bg-gray-200 rounded-xl mr-3"
+        className="cursor-pointer p-2 bg-gray-200 rounded-xl mr-3"
         aria-label="Previous Project"
       >
         <img src={assets.left_arrow} alt="Previous" />
       </button>
       <button
         onClick={() => swiper.slideNext()}
-        className="cursor-pointer p-3 bg-gray-200 rounded-xl mr-3"
+        className="cursor-pointer p-2 bg-gray-200 rounded-xl mr-3"
         aria-label="Next Project"
       >
         <img src={assets.right_arrow} alt="Next" />

@@ -59,12 +59,16 @@ const Navbar = () => {
         >
           Contact Us
         </Link>
-        <img
+        <div
+          className="flex items-center h-8"
           onClick={() => setShowMobileMenu(true)}
-          src={assets.menu}
-          className="sm:hidden w-7 cursor-pointer"
-          alt=""
-        />
+        >
+          <img
+            src={assets.menu}
+            className="sm:hidden cursor-pointer"
+            alt="menu"
+          />
+        </div>
       </div>
       {/* ----------- Mobile menu ---------- */}
       <div

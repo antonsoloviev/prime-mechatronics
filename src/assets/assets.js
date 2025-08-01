@@ -36,6 +36,7 @@ export const assets = {
 
 export const projectsData = [
   {
+    id: 1,
     title: "Проект 1",
     location: "Минск",
     image: project_1,
@@ -43,6 +44,7 @@ export const projectsData = [
       "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
+    id: 2,
     title: "Проект 2",
     location: "Гродно",
     image: project_2,
@@ -50,6 +52,7 @@ export const projectsData = [
       "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
+    id: 3,
     title: "Проект 3",
     location: "Брест",
     image: project_3,
@@ -57,6 +60,7 @@ export const projectsData = [
       "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
+    id: 4,
     title: "Проект 4",
     location: "Витебск",
     image: project_4,
@@ -64,6 +68,7 @@ export const projectsData = [
       "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
+    id: 5,
     title: "Проект 5",
     location: "Могилев",
     image: project_5,
@@ -71,6 +76,7 @@ export const projectsData = [
       "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
   },
   {
+    id: 6,
     title: "Проект 6",
     location: "Гомель",
     image: project_6,
