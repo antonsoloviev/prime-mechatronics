@@ -35,27 +35,24 @@ const Navbar = () => {
 
         <ul className="hidden sm:flex gap-8">
           <Link to={{ pathname: "/", hash: "#Projects" }}>
-            <li className="cursor-pointer text-gray-300 hover:text-white text-xl py-2">
+            <li className=" text-gray-300 hover:text-white text-xl py-2">
               Projects
             </li>
           </Link>
           <Link to={{ pathname: "/", hash: "#Services" }}>
-            <li className="cursor-pointer text-gray-300 hover:text-white text-xl py-2">
+            <li className=" text-gray-300 hover:text-white text-xl py-2">
               Services
             </li>
           </Link>
           <Link to={{ pathname: "/", hash: "#About" }}>
-            <li
-              href="#About"
-              className="cursor-pointer text-gray-300 hover:text-white text-xl py-2"
-            >
+            <li className=" text-gray-300 hover:text-white text-xl py-2">
               About
             </li>
           </Link>
         </ul>
         <Link
           to={{ pathname: "/", hash: "#Contact" }}
-          className="hidden sm:flex cursor-pointer text-gray-300 hover:text-white text-xl py-2"
+          className="hidden sm:flex text-gray-300 hover:text-white text-xl py-2"
         >
           Contact Us
         </Link>
@@ -85,41 +82,33 @@ const Navbar = () => {
           />
         </div>
         <ul className="flex flex-col items-center gap-3 mt-5 px-5 text-xl font-medium">
-          <a
+          <Link to={{ pathname: "/" }} onClick={() => setShowMobileMenu(false)}>
+            <li className="px-4 py-2 inline-block">Home</li>
+          </Link>
+          <Link
+            to={{ pathname: "/", hash: "#About" }}
             onClick={() => setShowMobileMenu(false)}
-            href="#Header"
-            className="px-4 py-2 rounded-full inline-block"
           >
-            Home
-          </a>
-          <a
+            <li className="px-4 py-2 inline-block">About</li>
+          </Link>
+          <Link
+            to={{ pathname: "/", hash: "#Projects" }}
             onClick={() => setShowMobileMenu(false)}
-            href="#About"
-            className="px-4 py-2 rounded-full inline-block"
           >
-            About
-          </a>
-          <a
+            <li className="px-4 py-2 inline-block">Projects</li>
+          </Link>
+          <Link
+            to={{ pathname: "/", hash: "#Services" }}
             onClick={() => setShowMobileMenu(false)}
-            href="#Projects"
-            className="px-4 py-2 rounded-full inline-block"
           >
-            Projects
-          </a>
-          <a
+            <li className="px-4 py-2 inline-block">Services</li>
+          </Link>
+          <Link
+            to={{ pathname: "/", hash: "#Contact" }}
             onClick={() => setShowMobileMenu(false)}
-            href="#Services"
-            className="px-4 py-2 rounded-full inline-block"
           >
-            Services
-          </a>
-          <a
-            onClick={() => setShowMobileMenu(false)}
-            href="#Contact"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            Contact us
-          </a>
+            <li className="px-4 py-2 inline-block">Contact us</li>
+          </Link>
         </ul>
       </div>
     </div>
