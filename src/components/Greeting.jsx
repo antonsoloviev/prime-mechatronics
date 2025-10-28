@@ -1,8 +1,10 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import "./Greeting.css";
+import { useTranslation } from "react-i18next";
 
 const Greeting = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-full flex justify-center items-center bg-gray-950">
       <div className="relative container w-full h-80 sm:h-90 md:h-100 lg:h-120">
@@ -17,16 +19,16 @@ const Greeting = () => {
           <div className="flex flex-col gap-8 md:gap-16 lg:gap-20">
             <div className="flex flex-col gap-8">
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[82px] max-w-4xl">
-                Инженерия высокого класса
+                {t("greeting.title")}
               </h2>
-              <p className="text-xl sm:text-2xl">Индивидуальный подход</p>
+              <p className="text-xl sm:text-2xl">{t("greeting.comment")}</p>
             </div>
 
             <a
               href="#About"
               className="border border-white px-8 py-3 rounded-2xl max-w-fit"
             >
-              Узнать больше
+              {t("greeting.learn more")}
             </a>
           </div>
         </div>

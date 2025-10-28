@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
+import { Languages } from "../utils/common";
 import { useEffect } from "react";
 import { Link } from "react-router";
+import LangSelector from "./Selectors/LangSelector";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [language, setLanguage] = useState(Languages[0]);
   useEffect(() => {
     if (showMobileMenu) {
       document.body.style.overflow = "hidden";
@@ -26,7 +32,7 @@ const Navbar = () => {
             >
               <img src={assets.logo} alt="" className="object-scale-down" />
             </div>
-            <div className="flex sm:flex md:flex flex-col items-left">
+            <div className="hidden lg:flex flex-col items-left">
               <span className="text-base text-gray-300">Prime</span>
               <span className="text-base text-gray-300">Mechatronics</span>
             </div>
@@ -36,26 +42,37 @@ const Navbar = () => {
         <ul className="hidden sm:flex gap-8">
           <Link to={{ pathname: "/", hash: "#Projects" }}>
             <li className=" text-gray-300 hover:text-white text-xl py-2">
-              Projects
+              {t("navbar.projects")}
             </li>
           </Link>
           <Link to={{ pathname: "/", hash: "#Services" }}>
             <li className=" text-gray-300 hover:text-white text-xl py-2">
-              Services
+              {t("navbar.services")}
             </li>
           </Link>
           <Link to={{ pathname: "/", hash: "#About" }}>
             <li className=" text-gray-300 hover:text-white text-xl py-2">
-              About
+              {t("navbar.about")}
             </li>
           </Link>
+          <Link
+            to={{ pathname: "/", hash: "#Contact" }}
+            className="hidden sm:flex text-gray-300 hover:text-white text-xl py-2"
+          >
+            {t("navbar.contact us")}
+          </Link>
         </ul>
-        <Link
+        {/* <Link
           to={{ pathname: "/", hash: "#Contact" }}
           className="hidden sm:flex text-gray-300 hover:text-white text-xl py-2"
         >
           Contact Us
-        </Link>
+        </Link> */}
+        <LangSelector
+          options={Languages}
+          currentOption={language}
+          onChange={setLanguage}
+        />
         <div
           className="flex items-center h-8"
           onClick={() => setShowMobileMenu(true)}

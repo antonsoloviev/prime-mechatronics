@@ -16,3 +16,5 @@ export const sliderSettings = {
     },
   },
 };
+
+export const Languages = ["EN", "RU", "CN"];

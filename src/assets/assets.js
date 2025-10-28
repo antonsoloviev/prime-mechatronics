@@ -13,10 +13,15 @@ import menu from "./icon-menu.svg";
 import menuClose from "./icon-close-menu.svg";
 import left_arrow from "./icon_ChevronLeft.svg";
 import right_arrow from "./icon_ChevronRight.svg";
+import top_arrow from "./icon_ChevronTop.svg";
+import bottom_arrow from "./icon_ChevronBottom.svg";
 import icon_whatsapp from "./icon_whatsapp.svg";
 import icon_telegram from "./icon_telegram.svg";
 import icon_instagram from "./icon_instagram.svg";
 import icon_check from "./icon_check2.svg";
+import EN from "./EN.png";
+import RU from "./RU.png";
+import CN from "./CN.png";
 
 export const assets = {
   logo,
@@ -28,10 +33,15 @@ export const assets = {
   project_img_2,
   left_arrow,
   right_arrow,
+  top_arrow,
+  bottom_arrow,
   icon_instagram,
   icon_telegram,
   icon_whatsapp,
   icon_check,
+  EN,
+  RU,
+  CN,
 };
 
 export const projectsData = [
