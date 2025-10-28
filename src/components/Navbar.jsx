@@ -100,31 +100,31 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col items-center gap-3 mt-5 px-5 text-xl font-medium">
           <Link to={{ pathname: "/" }} onClick={() => setShowMobileMenu(false)}>
-            <li className="px-4 py-2 inline-block">Home</li>
+            <li className="px-4 py-2 inline-block">{t("navbar.home")}</li>
           </Link>
           <Link
             to={{ pathname: "/", hash: "#About" }}
             onClick={() => setShowMobileMenu(false)}
           >
-            <li className="px-4 py-2 inline-block">About</li>
+            <li className="px-4 py-2 inline-block">{t("navbar.about")}</li>
           </Link>
           <Link
             to={{ pathname: "/", hash: "#Projects" }}
             onClick={() => setShowMobileMenu(false)}
           >
-            <li className="px-4 py-2 inline-block">Projects</li>
+            <li className="px-4 py-2 inline-block">{t("navbar.projects")}</li>
           </Link>
           <Link
             to={{ pathname: "/", hash: "#Services" }}
             onClick={() => setShowMobileMenu(false)}
           >
-            <li className="px-4 py-2 inline-block">Services</li>
+            <li className="px-4 py-2 inline-block">{t("navbar.services")}</li>
           </Link>
           <Link
             to={{ pathname: "/", hash: "#Contact" }}
             onClick={() => setShowMobileMenu(false)}
           >
-            <li className="px-4 py-2 inline-block">Contact us</li>
+            <li className="px-4 py-2 inline-block">{t("navbar.contact us")}</li>
           </Link>
         </ul>
       </div>

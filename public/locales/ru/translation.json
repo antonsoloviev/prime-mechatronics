@@ -1,5 +1,6 @@
 {
     "navbar": {
+        "home": "На Главную",
         "projects": "Проекты",
         "services": "Сервисы",
         "about": "О нас",
