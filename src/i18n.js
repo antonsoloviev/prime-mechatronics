@@ -40,7 +40,21 @@ i18n
     //   },
     // },
     backend: {
-      loadPath: "../prime-mechatronics/locales/{{lng}}/{{ns}}.json",
+      // for github pages correct URL without /public "https://antonsoloviev.github.io/prime-mechatronics/locales/{{lng}}/{{ns}}.json"
+      //loadPath: "../prime-mechatronics/locales/{{lng}}/{{ns}}.json",
+
+      //for local URL with /public "http://localhost:5173/prime-mechatronics/public/locales/{{lng}}/{{ns}}.json"
+      //loadPath: "/prime-mechatronics/public/locales/{{lng}}/{{ns}}.json",
+
+      loadPath: () => {
+        // check the domain
+        const host = window.location.host;
+        return (
+          (host === "localhost:5173"
+            ? "/prime-mechatronics/public"
+            : "/prime-mechatronics") + "/locales/{{lng}}/{{ns}}.json"
+        );
+      },
     },
   });
 
