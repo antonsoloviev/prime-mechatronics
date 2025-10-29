@@ -4,7 +4,7 @@ import "./Greeting.css";
 import { useTranslation } from "react-i18next";
 
 const Greeting = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("main");
   return (
     <section className="w-full flex justify-center items-center bg-gray-950">
       <div className="relative container w-full h-80 sm:h-90 md:h-100 lg:h-120">

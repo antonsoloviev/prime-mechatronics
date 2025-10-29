@@ -7,7 +7,7 @@ import LangSelector from "./Selectors/LangSelector";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("main");
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [language, setLanguage] = useState(Languages[0]);
