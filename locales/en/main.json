@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "home": "Home",
+        "projects": "Projects",
+        "services": "Services",
+        "about": "About",
+        "contact us": "Contact Us"
+    },
+    "greeting": {
+        "title": "High-class engineering",
+        "comment": "Individual approach",
+        "learn more": "Learn more"
+    }
+}
