@@ -40,7 +40,7 @@ i18n
     //   },
     // },
     backend: {
-      loadPath: "../prime-mechatronics/public/locales/{{lng}}/{{ns}}.json",
+      loadPath: "../prime-mechatronics/locales/{{lng}}/{{ns}}.json",
     },
   });
 
