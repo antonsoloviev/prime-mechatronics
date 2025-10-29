@@ -10,5 +10,33 @@
         "title": "一流的工程",
         "comment": "個人化方法",
         "learn more": "了解更多"
+    },
+    "about": {
+        "title": "關於我們",
+        "part1": "PrimeMechatronics 是一家工程公司，專注於客製化儀器開發、機器人、自動化、雷射和測量設備以及光學儀器。我們的團隊提供高素質的工程解決方案、快速的交貨週期和極具競爭力的價格。",
+        "part2": "我們為我們的專家團隊感到自豪，他們隨時準備實施最複雜的項目，為客戶提供最高水準的專業和品質。",
+        "our services": "我們的服務"
+    },
+    "projects": {
+        "title": "項目",
+        "comment": "瀏覽我們的作品集",
+        "view all": "查看所有項目"
+    },
+    "services": {
+        "title": "服務",
+        "comment": "我們提供的服務",
+        "service1": "自動化設計",
+        "service2": "雷射與光學元件設計",
+        "service3": "機器人開發",
+        "service4": "編制規範與技術方案，視覺化",
+        "service5": "機電一體化與精密機械"
+    },
+    "contact": {
+        "title": "聯絡我們",
+        "comment": "請描述您的需求，我們會盡快回",
+        "your name": "您的姓名",
+        "your email": "您的信箱",
+        "your message": "您的留言",
+        "send message": "發送留言"
     }
 }
