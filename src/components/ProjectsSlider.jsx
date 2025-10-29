@@ -4,8 +4,11 @@ import "./ProjectsSlider.css";
 import "swiper/css";
 import { sliderSettings } from "../utils/common";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const ProjectsSlider = () => {
+  const { t } = useTranslation("main");
+
   return (
     <section
       id="Projects"
@@ -13,14 +16,14 @@ const ProjectsSlider = () => {
     >
       <div className="flex flex-col items-start">
         <h1 className="text-3xl sm:text-6xl font-bold mb-4 text-left">
-          Проекты
+          {t("projects.title")}
         </h1>
         <p className="sm:text-xl text-left mb-2 max-w-80">
-          Изучи наше портфолио
+          {t("projects.comment")}
         </p>
         <Link to="/projects" className="flex gap-4 items-center group">
           <span className="sm:text-xl group-hover:text-gray-500">
-            Посмотреть все проекты
+            {t("projects.view all")}
           </span>
           <svg
             className="ease-in-out transition duration-300 group-hover:translate-x-4 group-hover:stroke-gray-500 stroke-black "

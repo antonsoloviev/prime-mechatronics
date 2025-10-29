@@ -1,7 +1,10 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation("main");
+
   return (
     <footer
       id="Footer"
@@ -62,25 +65,25 @@ const Footer = () => {
                 href="#Header"
                 className="text-gray-300 cursor-pointer hover:text-white"
               >
-                Home
+                {t("navbar.home")}
               </a>
               <a
                 href="#About"
                 className="text-gray-300 cursor-pointer hover:text-white"
               >
-                About
+                {t("navbar.about")}
               </a>
               <a
                 href="#Projects"
                 className="text-gray-300 cursor-pointer hover:text-white"
               >
-                Projects
+                {t("navbar.projects")}
               </a>
               <a
                 href="#Contact us"
                 className="text-gray-300 cursor-pointer hover:text-white"
               >
-                Contact us
+                {t("navbar.contact us")}
               </a>
             </ul>
           </div>

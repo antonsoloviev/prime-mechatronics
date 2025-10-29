@@ -10,5 +10,33 @@
         "title": "High-class engineering",
         "comment": "Individual approach",
         "learn more": "Learn more"
+    },
+    "about": {
+        "title": "about Us",
+        "part1": "PrimeMechatronics is an engineering company specializing in custom instrument development, robotics, automation, laser and measuring equipment, and optical instruments. Our team offers highly qualified engineering solutions, short lead times, and competitive pricing",
+        "part2": "We are proud of our specialists, who are ready to implement the most complex projects, providing clients with the highest level of professionalism and quality",
+        "our services": "Our services"
+    },
+    "projects": {
+        "title": "Projects",
+        "comment": "Explore our portfolio",
+        "view all": "View all projects"
+    },
+    "services": {
+        "title": "Services",
+        "comment": "Services we offer",
+        "service1": "Automation design",
+        "service2": "Design of Laser and Optical Devices",
+        "service3": "Robot Development",
+        "service4": "Preparation of Specifications and Technical Projects, Visualization",
+        "service5": "Mechatronics and Precision Mechanics"
+    },
+    "contact": {
+        "title": "Contact us",
+        "comment": "Describe the task and we will respond promptly",
+        "your name": "Your Name",
+        "your email": "Your Email",
+        "your message": "Your Message",
+        "send message": "Send Message"
     }
 }
