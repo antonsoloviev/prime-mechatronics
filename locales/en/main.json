@@ -17,11 +17,6 @@
         "part2": "We are proud of our specialists, who are ready to implement the most complex projects, providing clients with the highest level of professionalism and quality",
         "our services": "Our services"
     },
-    "projects": {
-        "title": "Projects",
-        "comment": "Explore our portfolio",
-        "view all": "View all projects"
-    },
     "services": {
         "title": "Services",
         "comment": "Services we offer",
@@ -38,5 +33,6 @@
         "your email": "Your Email",
         "your message": "Your Message",
         "send message": "Send Message"
-    }
+    },
+    "back": "Back"
 }
