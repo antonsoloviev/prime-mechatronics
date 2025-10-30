@@ -1,0 +1,58 @@
+{
+    "projects": {
+        "title": "Projects",
+        "comment": "Explore our portfolio",
+        "view all": "View all projects"
+    },
+    "back": "Back",
+    "project_01":  {
+        "title": "High-precision 2-axis motion table",
+        "location": "Minsk",
+        "description": "A high-precision 2-axis table with a ball screw drive. A special 2-axis high-precision table was designed using a ball screw drive, stepper motors, and optical encoders. It enables a movement accuracy of approximately 5 µm"
+    },
+    "project_02":  {
+        "title": "2D laser measuring scanner",
+        "location": "Minsk",
+        "description": "A 2D laser measuring scanner with airflow, cooling, and a robot mount. We've designed a wide range of laser scanners for a variety of tasks and applications"
+    },
+    "project_03":  {
+        "title": "2D laser scanner for large measurement ranges",
+        "location": "Minsk",
+        "description": "A 2D laser scanner for large measurement ranges, with airflow and cooling. A wide range of laser scanners has been designed for various tasks and applications."
+    },
+    "project_04":  {
+        "title": "Laser measuring system for determining wear and parameters of railway wheels",
+        "location": "Minsk",
+        "description": "A laser measuring system for determining wear and parameters of railway wheels. A complex measuring system has been designed, including specialized optical laser scanners, a drive-based protective shutter system, a thermal stabilization system, a blower system for the optical instrument lenses, a concrete/rail mounting system, and a specialized calibration device"
+    },
+    "project_05":  {
+        "title": "Mobile robot on mecanum wheels",
+        "location": "Minsk",
+        "description": "A mobile robot on mecanum wheels. A miniature mobile robot with mecanum wheels and a stereo camera has been designed. It is designed for a variety of purposes and locations"
+    },
+    "project_06":  {
+        "title": "Robot gripper",
+        "location": "Minsk",
+        "description": "Robot gripper. A special gripper designed for industrial robots and cobots"
+    },
+    "project_07":  {
+        "title": "Collaborative robot",
+        "location": "Minsk",
+        "description": "A collaborative robot. A series of collaborative robots has been designed using a hollow-shaft motor, a harmonic gearbox, and composite materials"
+    },
+    "project_08":  {
+        "title": "Automated robotic salad making machine",
+        "location": "Minsk",
+        "description": "An automated robotic salad preparation machine. An automated robotic salad preparation machine has been designed, comprising a collaborative robot, a specialized gripper, a sequential plate delivery mechanism, a sauce dispensing mechanism, a gripper-changing mechanism, a salad delivery mechanism, and more"
+    },
+    "project_09":  {
+        "title": "Automatic packaging complex",
+        "location": "Minsk",
+        "description": "Automatic packaging complex. An automated food packaging system was designed. Cobots and delta robots, as well as conveyors, were used"
+    },
+    "project_10":  {
+        "title": "Anthropomorphic gripper",
+        "location": "Minsk",
+        "description": "An anthropomorphic gripper. A special gripping mechanism was designed to mimic the anatomy and movements of the human hand. Multi-axis torque sensors are embedded in the fingertips"
+    }
+}

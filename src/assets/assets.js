@@ -1,12 +1,16 @@
 import logo from "./mech_logo.svg";
+import project_01 from "./project_01.jpg";
+import project_02 from "./project_02.jpg";
+import project_03 from "./project_03.jpg";
+import project_04 from "./project_04.jpg";
+import project_05 from "./project_05.jpg";
+import project_06 from "./project_06.jpg";
+import project_07 from "./project_07.jpg";
+import project_08 from "./project_08.jpg";
+import project_09 from "./project_09.jpg";
+import project_10 from "./project_10.jpg";
 import project_img_1 from "./project_img_1.jpg";
 import project_img_2 from "./project_img_2.jpg";
-import project_1 from "./project_1.avif";
-import project_2 from "./project_2.avif";
-import project_3 from "./project_3.avif";
-import project_4 from "./project_4.avif";
-import project_5 from "./project_5.avif";
-import project_6 from "./project_6.avif";
 import greeting_1 from "./greeting_1.jpg";
 import about_img from "./about_img.jpg";
 import menu from "./icon-menu.svg";
@@ -22,6 +26,12 @@ import icon_check from "./icon_check2.svg";
 import EN from "./EN.png";
 import RU from "./RU.png";
 import CN from "./CN.png";
+// import i18n, { initPromise } from "../i18n";
+
+// export const translate = async (key) => {
+//   await initPromise; // Wait for i18next to be ready
+//   return i18n.t(key, { ns: "projects" });
+// };
 
 export const assets = {
   logo,
@@ -47,50 +57,72 @@ export const assets = {
 export const projectsData = [
   {
     id: 1,
-    title: "Проект 1",
-    location: "Минск",
-    image: project_1,
-    detail:
-      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
+    title: "project_01.title",
+    location: "project_01.location",
+    image: project_01,
+    description: "project_01.description",
   },
   {
     id: 2,
-    title: "Проект 2",
-    location: "Гродно",
-    image: project_2,
-    detail:
-      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
+    title: "project_02.title",
+    location: "project_02.location",
+    image: project_02,
+    description: "project_02.description",
   },
   {
     id: 3,
-    title: "Проект 3",
-    location: "Брест",
-    image: project_3,
-    detail:
-      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
+    title: "project_03.title",
+    location: "project_03.location",
+    image: project_03,
+    description: "project_03.description",
   },
   {
     id: 4,
-    title: "Проект 4",
-    location: "Витебск",
-    image: project_4,
-    detail:
-      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
+    title: "project_04.title",
+    location: "project_04.location",
+    image: project_04,
+    description: "project_04.description",
   },
   {
     id: 5,
-    title: "Проект 5",
-    location: "Могилев",
-    image: project_5,
-    detail:
-      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
+    title: "project_05.title",
+    location: "project_05.location",
+    image: project_05,
+    description: "project_05.description",
   },
   {
     id: 6,
-    title: "Проект 6",
-    location: "Гомель",
-    image: project_6,
-    detail:
-      "Incididunt duis non anim nulla voluptate. Adipisicing exercitation occaecat aute reprehenderit duis in ad cupidatat. Id nisi elit reprehenderit Lorem ad sit reprehenderit. Nulla fugiat occaecat elit id. Nisi excepteur incididunt cupidatat enim cillum. Labore ad minim excepteur ad pariatur consequat tempor exercitation minim est amet est fugiat et. Veniam minim incididunt ea enim.",
+    title: "project_06.title",
+    location: "project_06.location",
+    image: project_06,
+    description: "project_06.description",
+  },
+  {
+    id: 7,
+    title: "project_07.title",
+    location: "project_06.location",
+    image: project_07,
+    description: "project_06.description",
+  },
+  {
+    id: 8,
+    title: "project_08.title",
+    location: "project_06.location",
+    image: project_08,
+    description: "project_06.description",
+  },
+  {
+    id: 9,
+    title: "project_09.title",
+    location: "project_06.location",
+    image: project_09,
+    description: "project_06.description",
+  },
+  {
+    id: 10,
+    title: "project_10.title",
+    location: "project_06.location",
+    image: project_10,
+    description: "project_06.description",
   },
 ];

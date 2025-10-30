@@ -7,7 +7,7 @@ import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 
 const ProjectsSlider = () => {
-  const { t } = useTranslation("main");
+  const { t } = useTranslation("projects");
 
   return (
     <section
@@ -53,16 +53,15 @@ const ProjectsSlider = () => {
                 <div>
                   <img
                     src={card.image}
-                    alt={card.title}
+                    alt={t([`${card.title}`], { lng: "en" })}
                     className="rounded-xl"
                   />
                 </div>
                 <div className=" flex justify-start">
                   <div className="inline-bloc w-3/4 px-4 py-2">
                     <h2 className="text-xl font-semibold text-gray-800">
-                      {card.title}
+                      {t([`${card.title}`])}
                     </h2>
-                    <p>{card.location}</p>
                   </div>
                 </div>
               </div>
