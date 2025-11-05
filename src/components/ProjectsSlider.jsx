@@ -48,9 +48,9 @@ const ProjectsSlider = () => {
             <Link to={`/projects/${card.id}`}>
               <div
                 key={i}
-                className="project-card flex flex-col justify-between pt-14 rounded-xl max-w-xs m-auto transition-all duration-300 ease-in h-full min-h-85"
+                className="project-card flex flex-col gap-4 pt-14 rounded-xl max-w-xs m-auto transition-all duration-300 ease-in h-full"
               >
-                <div>
+                <div className="">
                   <img
                     src={card.image}
                     alt={t([`${card.title}`], { lng: "en" })}
@@ -58,8 +58,8 @@ const ProjectsSlider = () => {
                   />
                 </div>
                 <div className=" flex justify-start">
-                  <div className="inline-bloc w-3/4 px-4 py-2">
-                    <h2 className="text-xl font-semibold text-gray-800">
+                  <div className="line-clamp-2 px-4 py-1 hover:line-clamp-none">
+                    <h2 className="sm:text-xl font-semibold text-gray-800">
                       {t([`${card.title}`])}
                     </h2>
                   </div>
