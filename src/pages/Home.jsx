@@ -4,10 +4,12 @@ import About from "../components/About";
 import ProjectsSlider from "../components/ProjectsSlider";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
+import { ScrollRestoration } from "react-router";
 
 const Home = () => {
   return (
     <div>
+      <ScrollRestoration />
       <Greeting />
       <About />
       <ProjectsSlider />

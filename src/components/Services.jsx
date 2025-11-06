@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <section
       id="Services"
-      className="relative container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden"
+      className="relative container mx-auto py-4 pt-20 px-4 sm:px-6 md:px-20 lg:px-32 my-10 w-full overflow-hidden"
     >
       <div className="flex flex-col items-center">
         <h1 className="text-3xl sm:text-6xl font-bold mb-2 text-left">

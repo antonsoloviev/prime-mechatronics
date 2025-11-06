@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div>
       <ScrollRestoration />
-      <section className="relative container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 w-full overflow-hidden">
+      <section className="relative container mx-auto py-16 px-6 md:px-20 lg:px-32 w-full overflow-hidden">
         <div className="flex flex-col gap-8">
           <div
             className="group flex gap-4 items-center cursor-pointer"
@@ -37,17 +37,17 @@ const Projects = () => {
             {t("projects.title")}
           </h1>
         </div>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 pt-16">
           {projectsData.map((card, i) => (
             <Link to={`/projects/${card.id}`} className="m-auto" key={i}>
-              <div className="project-card max-w-80 flex flex-col gap-2.5 pt-16 border-transparent rounded-xl w-max transition-all duration-300 ease-in">
+              <div className="project-card max-w-80 flex flex-col gap-2.5 border-transparent rounded-xl w-max transition-all duration-300 ease-in">
                 <img
                   src={card.image}
                   alt={t([`${card.title}`], { lng: "en" })}
                   className="w-full rounded-xl"
                 />
                 <div className=" flex justify-start">
-                  <div className="line-clamp-3 px-4 py-1 hover:line-clamp-none min-h-23">
+                  <div className="line-clamp-3 px-4 py-1 hover:line-clamp-none min-h-20 sm:min-h-23">
                     <h2 className="sm:text-xl font-semibold text-gray-800">
                       {t([`${card.title}`])}
                     </h2>
