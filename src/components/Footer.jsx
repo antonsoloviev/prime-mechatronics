@@ -1,6 +1,7 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 
 const Footer = () => {
   const { t } = useTranslation("main");
@@ -61,30 +62,31 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/2 ">
             <ul className="flex flex-col gap-4 items-center sm:items-start">
-              <a
-                href="#Header"
-                className="text-gray-300 cursor-pointer hover:text-white"
-              >
-                {t("navbar.home")}
-              </a>
-              <a
-                href="#About"
-                className="text-gray-300 cursor-pointer hover:text-white"
-              >
-                {t("navbar.about")}
-              </a>
-              <a
-                href="#Projects"
-                className="text-gray-300 cursor-pointer hover:text-white"
-              >
-                {t("navbar.projects")}
-              </a>
-              <a
-                href="#Contact us"
-                className="text-gray-300 cursor-pointer hover:text-white"
-              >
-                {t("navbar.contact us")}
-              </a>
+              <Link to="/">
+                <li className=" text-gray-300 hover:text-white cursor-pointer">
+                  {t("navbar.home")}
+                </li>
+              </Link>
+              <Link to="/#About">
+                <li className=" text-gray-300 hover:text-white cursor-pointer">
+                  {t("navbar.about")}
+                </li>
+              </Link>
+              <Link to="/#Projects">
+                <li className=" text-gray-300 hover:text-white cursor-pointer">
+                  {t("navbar.projects")}
+                </li>
+              </Link>
+              <Link to="/#Services">
+                <li className=" text-gray-300 hover:text-white cursor-pointer">
+                  {t("navbar.services")}
+                </li>
+              </Link>
+              <Link to="/#Contact">
+                <li className=" text-gray-300 hover:text-white cursor-pointer">
+                  {t("navbar.contact us")}
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

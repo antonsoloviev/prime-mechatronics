@@ -32,18 +32,11 @@ const Contact = () => {
       setResult("");
     }
   };
-  //   "contact": {
-  //     "title": "Contact us",
-  //     "comment": "Describe the task and we will respond promptly",
-  //     "your name": "Your Name",
-  //     "your email": "Your Email",
-  //     "message": "Message",
-  //     "send message": "Send message"
-  // }
+
   return (
     <section
       id="Contact"
-      className="relative container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-10 w-full overflow-hidden"
+      className="relative container mx-auto pb-4 pt-20 px-4 sm:px-6 md:px-20 lg:px-32 my-10 w-full overflow-hidden"
     >
       <h1 className="text-3xl sm:text-6xl font-bold mb-2 text-center">
         {t("contact.title")}
